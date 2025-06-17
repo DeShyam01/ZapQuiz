@@ -43,3 +43,27 @@
   background-color: rgb(80, 79, 79);
   border-radius: 8px;
 }
+
+@media (max-width: 768px) {
+  .navbar nav label{
+    display: block;
+  }
+  .navbar nav .navigation {
+    display: none;
+  }
+  #hamburger:checked ~ .navigation {
+    display: block;
+    position: absolute;
+    top: 100%;
+    background: rgba(22, 22, 22, 0.973);
+    width: 100%;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 1.5rem;
+    flex: 1;
+    padding: 0.5rem 0.1rem;
+  }
+}
