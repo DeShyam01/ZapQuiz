@@ -1,5 +1,9 @@
-body{
-  background-image: url("https://wallpaperaccess.com/full/2384073.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
+
+/* html, body{
+  height: 100%; 
+} */
