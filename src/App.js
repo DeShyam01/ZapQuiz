@@ -7,7 +7,7 @@ import Quiz from "./pages/Quiz";
 const router = createBrowserRouter(
   [
     {
-      path: "/",
+      path: "/Home",
       element: (
         <>
           <Navbar />
@@ -26,7 +26,7 @@ const router = createBrowserRouter(
     },
   ],
   {
-    basename: "/ZapQuize",
+    basename: "/ZapQuiz",
   }
 );
 

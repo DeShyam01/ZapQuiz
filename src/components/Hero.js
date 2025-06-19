@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "../styles/Hero.css";
 
 const Hero = () => {
@@ -12,7 +13,7 @@ const Hero = () => {
           <br />
           🎮Score high, Beat the timer. Repeat.
         </p>
-        <button>⚡ Start Quiz</button>
+        <Link to="/Quiz" className="link">⚡ Start Quiz</Link>
       </div>
       <div className="right">
         <img

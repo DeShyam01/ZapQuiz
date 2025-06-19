@@ -1,7 +1,11 @@
 .hero {
   height: 100vh;
-  /* background-color: rgb(219, 156, 74); */
-  background: linear-gradient(135deg,rgb(144, 144, 212),rgb(99, 99, 204), rgb(32, 32, 224));
+  background: linear-gradient(
+    135deg,
+    rgb(144, 144, 212),
+    rgb(99, 99, 204),
+    rgb(32, 32, 224)
+  );
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -28,8 +32,7 @@
   overflow: hidden;
 }
 
-.hero .left button{
-  /* background: linear-gradient(230deg,rgb(104, 104, 211),rgb(20, 20, 221)); */
+.hero .left .link {
   background: linear-gradient(135deg, #ecac63, #ff6600);
   border: none;
   height: 2rem;
@@ -43,39 +46,34 @@
   color: #cccccc;
   font-size: 1.4rem;
   border-radius: 8px;
+  text-decoration: none;
   animation: pulse 2s infinite;
 }
 
-.hero .left button:hover{
+.hero .left .link:hover {
   transform: scale(1.08) translateX(-50%);
   box-shadow: 0 0 25px #ff9900;
 }
 
-.hero .left button:active {
+.hero .left .link:active {
   transform: scale(0.95) translateX(-50%);
 }
 
 .hero .right {
   position: absolute;
   top: 50%;
-  right: 10%;
-  animation: float 5s infinite ease-in-out;
-  box-shadow: 0 0 10px 6px rgb(15, 41, 189);
-  background-color: #0a29d4;
+  left: 90%;
+  animation: fadeIn 1s ease-out, float 5s infinite ease-in-out;
+  /* animation: ; */
   border-radius: 5px;
-  animation: fadeIn 1s ease-out;
 }
-
-/* .hero .right img{
-  
-} */
 
 @keyframes float {
   0% {
     transform: translateY(0);
   }
   50% {
-    transform: translateY(-20px);
+    transform: translateY(-30px);
   }
   100% {
     transform: translateY(0);
@@ -89,12 +87,42 @@
   }
   to {
     opacity: 1;
-    transform: scale(1) translateY(inherit);
+    transform: scale(1) translate(inherit);
   }
 }
 
 @keyframes pulse {
-  0% { box-shadow: 0 0 0 0 rgba(255, 145, 0, 0.7); }
-  70% { box-shadow: 0 0 0 10px rgba(0, 153, 255, 0); }
-  100% { box-shadow: 0 0 0 0 rgba(0, 153, 255, 0); }
+  0% {
+    box-shadow: 0 0 0 0 rgba(255, 145, 0, 0.7);
+  }
+  70% {
+    box-shadow: 0 0 0 10px rgba(0, 153, 255, 0);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(0, 153, 255, 0);
+  }
+}
+
+@media (max-width: 768px) {
+  .hero .left h1 {
+    font-size: 2.5rem;
+  }
+
+  .hero .left p {
+    font-size: 1rem;
+    overflow: hidden;
+  }
+
+  .hero .left {
+    width: 100%;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  .hero .right {
+    position: absolute;
+    top: 75%;
+    left: 45%;
+    transform: translate(-75%,-50%);
+  }
 }
