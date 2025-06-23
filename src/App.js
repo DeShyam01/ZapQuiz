@@ -12,7 +12,7 @@ import NotFound from "./components/NotFound";
 
 const router = createBrowserRouter([
   {
-    path: "/Home",
+    path: "/",
     element: (
       <>
         <Navbar />
