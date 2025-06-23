@@ -7,7 +7,7 @@ function NotFound() {
     <div className="not-found-page">
       <h1>Oops! Page Not Found</h1>
       <p>Looks like you're lost in the quiz universe.</p>
-      <Link to="/Home" className="home-link">
+      <Link to="/" className="home-link">
         Back to Home
       </Link>
     </div>

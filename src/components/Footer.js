@@ -9,7 +9,7 @@ const Footer = () => {
   return (
     <section id="footer" class="section">
       <div class="footer">
-        <h2><Link to="/Home">ZapQuiz</Link></h2>
+        <h2><Link to="/">ZapQuiz</Link></h2>
         <footer>
           <div class="socials">
             <a href="https://www.instagram.com/" target="_blank"><img src={igIco} alt="" /></a>
