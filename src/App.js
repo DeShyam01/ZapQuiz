@@ -13,6 +13,13 @@ import NotFound from "./components/NotFound";
 const router = createBrowserRouter([
   {
     path: "/",
+    loader: () => {
+      window.location.replace("/Home");
+      return null;
+    },
+  },
+  {
+    path: "/Home",
     element: (
       <>
         <Navbar />
