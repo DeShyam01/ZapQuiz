@@ -1,70 +1,86 @@
-# Getting Started with Create React App
+# ZAPQUIZ
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+*Ignite Curiosity, Conquer Challenges, Elevate Learning Instantly*
 
-## Available Scripts
+![last commit](https://img.shields.io/badge/last%20commit-today-brightgreen)
+![language](https://img.shields.io/badge/javascript-67.6%25-yellow)
+![languages](https://img.shields.io/badge/languages-3-blue)
 
-In the project directory, you can run:
+## Built with the tools and technologies:
 
-### `npm start`
+![JSON](https://img.shields.io/badge/-JSON-black?logo=json&logoColor=white)
+![Markdown](https://img.shields.io/badge/-Markdown-black?logo=markdown&logoColor=white)
+![npm](https://img.shields.io/badge/-npm-red?logo=npm&logoColor=white)
+![JavaScript](https://img.shields.io/badge/-JavaScript-yellow?logo=javascript&logoColor=white)
+![Ajv](https://img.shields.io/badge/-Ajv-cyan)
+![React](https://img.shields.io/badge/-React-blue?logo=react)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+---
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Table of Contents
 
-### `npm test`
+- [Overview](#overview)
+- [Getting Started](#getting-started)
+  - [Prerequisites](#prerequisites)
+  - [Installation](#installation)
+  - [Usage](#usage)
+  - [Testing](#testing)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+---
 
-### `npm run build`
+## Overview
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+ZapQuiz is an open-source React-based toolkit for creating engaging, interactive quiz platforms. It offers a modular architecture, seamless client-side routing, and persistent state management to deliver a smooth user experience.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Why ZapQuiz?
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+This project simplifies building dynamic quiz applications with features like:
 
-### `npm run eject`
+- 🧭 **Navigation**: Intuitive routing with deep linking support for a seamless single-page experience.
+- 🎯 **Core Quiz Engine**: Manages questions, timing, answers, and score calculation for engaging gameplay.
+- 🛠️ **Modular Components**: Reusable UI elements like Leaderboard, Score, and Navbar for flexible customization.
+- 🗃️ **State Persistence**: Centralized context for user data and scores, stored across sessions.
+- 🚀 **Easy Deployment**: Streamlined setup with scripts and configuration files for quick launch and maintenance.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+---
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Getting Started
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+### Prerequisites
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+This project requires the following dependencies:
 
-## Learn More
+- **Programming Language**: JavaScript  
+- **Package Manager**: npm
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+---
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+### Installation
 
-### Code Splitting
+Build ZapQuiz from the source and install dependencies:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+1. **Clone the repository**:
+    ```bash
+    git clone https://github.com/DeShyam01/ZapQuiz
+    ```
 
-### Analyzing the Bundle Size
+2. **Navigate to the project directory**:
+    ```bash
+    cd ZapQuiz
+    ```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+3. **Install the dependencies**:  
+    Using [npm](https://www.npmjs.com/):
+    ```bash
+    npm install
+    ```
 
-### Making a Progressive Web App
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+### Usage
 
-### Advanced Configuration
+Run the project with:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Using [npm](https://www.npmjs.com/):
+```bash
+npm start
