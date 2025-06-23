@@ -1,0 +1,33 @@
+.not-found-page {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #1e1e2f, #2a2a40);
+  color: white;
+  text-align: center;
+}
+
+.not-found-page h1 {
+  font-size: 4rem;
+  margin-bottom: 1rem;
+}
+
+.not-found-page p {
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.home-link {
+  padding: 0.75rem 1.5rem;
+  background: #3f51b5;
+  color: white;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: background 0.3s ease-in;
+}
+
+.home-link:hover {
+  background: #303f9f;
+}

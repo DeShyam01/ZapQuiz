@@ -1,29 +1,30 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { NavLink } from 'react-router-dom';
 import "../styles/Navbar.css";
 
 const Navbar = () => {
   return (
-    <div class="navbar">
+    <div className="navbar">
       <nav>
-        <div class="logo">
+        <div className="logo">
           <Link to="/Home" className="homepage-link"><h1>ZapQuiz</h1></Link>
         </div>
         <input type="checkbox" name="hamburger" id="hamburger" />
-        <label for="hamburger">☰</label>
-        <div class="navigation">
-          <Link to="/Home" className="nav-link">
+        <label htmlFor="hamburger">☰</label>
+        <div className="navigation">
+          <NavLink to="/Home" className={({ isActive }) => isActive ? "nav-link active" : "nav-link"}>
             Home
-          </Link>
-          <Link to="/Quiz" className="nav-link">
+          </NavLink>
+          <NavLink to="/Quiz" className="nav-link">
             Start Quiz
-          </Link>
-          <Link to="/score" className="nav-link">
-            Scores
-          </Link>
-          <Link to="/about" className="nav-link">
+          </NavLink>
+          <NavLink to="/Leaderboard" className="nav-link">
+            Leaderboard
+          </NavLink>
+          <NavLink to="/About" className="nav-link">
             About
-          </Link>
+          </NavLink>
         </div>
       </nav>
     </div>

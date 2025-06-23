@@ -1,0 +1,92 @@
+body {
+  height: 100%;
+}
+
+.bg{
+  background-image: url("https://t4.ftcdn.net/jpg/04/39/13/37/360_F_439133763_FrLdhZsd5aGC23r9ATARuKJBr8ifZjIe.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 75%;
+  height: 100%;
+}
+
+.quiz-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(226, 222, 222, 0.1);
+  padding: 1rem;
+  backdrop-filter: blur(15px);
+  border-radius: 20px;
+  margin: auto;
+  color: white;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.37);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  font-family: "Poppins", sans-serif;
+  animation: fadeIn 1s ease-out;
+}
+
+.quiz-container h1 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #fff;
+}
+
+.quiz-container p {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+}
+
+.quiz-container button {
+  width: 40%;
+  margin: 0.5rem 1rem;
+  border-radius: 10px;
+  border: none;
+  background: linear-gradient(135deg, #93bbfc, #4447e4);
+  color: white;
+  padding: 12px 20px;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.quiz-container .options button:hover,
+.quiz-container .selected:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 15px #2484fa;
+}
+
+.quiz-container .selected {
+  box-shadow: 0 0 10px 2px rgba(147, 197, 253, 0.486);
+  background: linear-gradient(135deg, #06b6d4, #3b82f6);
+  border: 2px solid #00b7ff;
+}
+
+.cntrl-buttons {
+  margin: 1rem 0;
+}
+
+.buttons button:hover{
+  transform: scale(1.05);
+  box-shadow: 0 0 10px 2px rgb(101, 101, 161);
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.8) translate(0,0);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1) translate(inherit);
+  }
+}
+
+@media (max-width: 768px) {
+  .bg{
+    width: 100%;
+  }
+  .quiz-container{
+    width: 90%;
+  }
+}

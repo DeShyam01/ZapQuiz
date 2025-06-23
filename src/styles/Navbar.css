@@ -1,5 +1,9 @@
 .navbar {
   width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
 }
 
 .navbar nav {
@@ -11,7 +15,6 @@
   justify-content: space-between;
   align-items: center;
   padding: 1rem 1.2rem;
-  /* z-index: 1; */
 }
 
 .homepage-link {
@@ -40,15 +43,24 @@
   cursor: default;
 }
 
+.navbar nav .navigation .nav-link.active {
+  color: #1166e6;
+  border-bottom: 2px solid #1166e6;
+}
+
 .navbar nav .navigation .nav-link:hover {
   background-color: rgba(97, 130, 223, 0.226);
   border-radius: 8px;
 }
 
+.navbar nav .navigation .nav-link.nav-link.active:hover {
+  border-radius: 0;
+  background: none;
+}
+
 @media (max-width: 768px) {
   .navbar {
     width: 100%;
-    position: relative;
   }
   
   .navbar nav label {
