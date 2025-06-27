@@ -2,7 +2,7 @@
 
 *Ignite Curiosity, Conquer Challenges, Elevate Learning Instantly*
 
-![last commit](https://img.shields.io/badge/last%20commit-today-brightgreen)
+![last commit](https://img.shields.io/badge/last%20commit-23 June 2025-brightgreen)
 ![language](https://img.shields.io/badge/javascript-67.6%25-yellow)
 ![languages](https://img.shields.io/badge/languages-3-blue)
 
@@ -84,3 +84,12 @@ Run the project with:
 Using [npm](https://www.npmjs.com/):
 ```bash
 npm start
+```
+## Testing
+
+ZapQuiz uses the `{test_framework}` test framework. Run the test suite with:
+
+Using [npm](https://www.npmjs.com/):
+
+```bash
+npm test
